@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { searchByName, listCategories, listIngredients, filterByCategory, filterByIngredient } from "../api";
+import { searchByName, filterByCategory, filterByIngredient } from "../api";
 import RecipeCard from "../components/RecipeCard";
 import Filters from "../components/Filters";
 
@@ -44,7 +44,7 @@ function Home() {
         className="border p-2 w-full mb-4 rounded"
       />
 
-      <Filters 
+      <Filters
         onCategorySelect={handleFilterCategory}
         onIngredientSelect={handleFilterIngredient}
       />
